@@ -4,14 +4,16 @@ const Headline = (props) => {
   return (
     <div
       style={{
-        height: '250px',
-        width: '90%',
+        width: '85%',
         margin: 'auto',
+        height: '250px',
+        display: 'flex',
+        justifyContent: 'space-between',
+        maxWidth: '850px'
       }}
     >
       <div
         style={{
-          margin: "20px",
           float: 'left',
         }}
       >
@@ -19,8 +21,8 @@ const Headline = (props) => {
           src={process.env.PUBLIC_URL + "./images/headshot.png"}
           alt="Headshot"
           style={{
-            width: "250px",
-            height: "250px",
+            width: "210px",
+            // height: "250px",
           }}
         />
       </div>
@@ -28,11 +30,11 @@ const Headline = (props) => {
         style={{
           margin: 'auto',
           textAlign: 'center',
-          padding: '70px'
+          // padding: '40px'
         }}
       >
         <h1>Software Engineer & Web Developer</h1>
-        <p>Tagline goes here. Something mildly inspiring.</p>
+        <p>Tagline goes here. Inspire me a little. Not too much.</p>
       </div>
     </div>
   );
