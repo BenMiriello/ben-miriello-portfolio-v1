@@ -12,7 +12,7 @@ function App() {
       <Section title="About Me" narrow>
         <p>{content.aboutMe}</p>
       </Section>
-      <Section title="Skills" narrow>
+      <Section title="Skills" narrow skills>
         {content.skillset.map(name => (
           <Skill key={name} name={name} />
         ))}

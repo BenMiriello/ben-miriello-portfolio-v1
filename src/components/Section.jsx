@@ -1,25 +1,25 @@
 import React from "react";
-import Separator from './Separator'
 
-const Section = (props) => {
+const Section = ({title, narrow, skills, children}) => {
 
   const innerContent = () => {
-    if (!!props.narrow) {
-      return <div className="narrow">{props.children}</div>
+    if (!!narrow) {
+      return <div className="narrow">{children}</div>
     } else {
-      return props.children
+      return children
     }
   }
 
+  const getClass = () => {
+    if (skills) return "main-section skills"
+    else return "main-section"
+  }
+
   return (
-    <>
-      <Separator px="20"/>
-      <div className="main-section">
-        <h2>{props.title}</h2>
-        {innerContent()}
-      </div>
-      <Separator px="20"/>
-    </>
+    <div className={getClass()}>
+      <h2>{title}</h2>
+      {innerContent()}
+    </div>
   );
 };
 

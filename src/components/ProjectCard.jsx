@@ -4,7 +4,7 @@ import Separator from "./Separator";
 const ProjectCard = ({ proj }) => {
   return (
     <div className="section group project-card">
-      <div className="col span-4-of-12 project-grid-image-container">
+      <div className="col span-4-of-12 hide-in-mobile">
         <div className="project-image-container">
           <img
             className="project-image"
@@ -12,7 +12,6 @@ const ProjectCard = ({ proj }) => {
           />
         </div>
       </div>
-      <Separator px="20" />
       <div className="col span-8-of-12">
         <div className="project-details">
           <h3>{proj.name}</h3>

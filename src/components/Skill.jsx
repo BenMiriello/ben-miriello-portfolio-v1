@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Skill = props => {
+const Skill = ({name, size}) => {
 
-  const handleClick = () => {}
+  const [clicked, setClicked] = useState(false)
+
+  const handleClick = () => {
+    setClicked(!clicked);
+  }
   
   return (
     <li
-      className="skill"
-      onClick={handleClick}
+      className={!clicked ? "skill" : "skill-clicked"}
+      onClick={() => handleClick()}
     >
-      <div style={{margin: '8px', marginTop: '2px', marginBottom: '2px'}}>
-        <span>{props.name}</span>
+      <div className="skill-name-container">
+        <span>{name}</span>
       </div>
     </li>
   );

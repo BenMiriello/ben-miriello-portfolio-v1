@@ -6,10 +6,11 @@ const content = {
     "React",
     "Redux",
     // "React Native",
+    "Ruby",
     "Ruby on Rails",
+    "PostgreSQL",
     "HTML5",
     "CSS3",
-    "PostgreSQL",
   ],
   projects: [
     {
