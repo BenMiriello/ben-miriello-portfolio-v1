@@ -65,6 +65,16 @@ h2 {
   letter-spacing: 1px;
 }
 
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #000;
+  content: "";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
 .narrow {
   margin: auto;
   width: 85%;
