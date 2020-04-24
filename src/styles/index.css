@@ -1,6 +1,10 @@
 /* #11ABC1 #DF3062 #F5B935 #4BAC3F */
 /* #5dd3ee, #e865fc */
 
+/*
+SALMON: #FFA07A -light: #ffbca1 -dark: 	#E9967A
+*/
+
 /* ------------------------------------------------------------ */
 /* BASIC SETUP */
 /* ------------------------------------------------------------ */
@@ -9,6 +13,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+::selection {
+  background: #ffbca1; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffbca1; /* Gecko Browsers */
 }
 
 html,
@@ -43,6 +54,7 @@ code {
   width: 85%;
   margin: 20px auto;
   max-width: 850px;
+  margin-bottom: 60px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -53,12 +65,14 @@ code {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-weight: 400;
   margin: auto;
   margin-top: 0;
   margin-bottom: 10px;
   text-align: center;
+  cursor: default;
 }
 
 h1 {
@@ -75,12 +89,20 @@ h2 {
 h2:after {
   display: block;
   height: 2px;
-  background-color: #000;
+  background-color: 	#e08b79;
   content: "";
   width: 100px;
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+h3 {
+  text-align: left;
+}
+
+p {
+  cursor: default;
 }
 
 .narrow {
@@ -154,16 +176,18 @@ h2:after {
     -4px -4px 4px #ffffff;
   -webkit-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
+  cursor: pointer;
 }
 
 .skill-clicked {
   display: inline-block;
   margin: 10px;
   border-radius: 20px;
-  box-shadow: 4px 4px 4px #ffffff,
-    -4px -4px 4px #d5d7da;
-  -webkit-transition: box-shadow 0.2s;
-  transition: box-shadow 0.2s;
+  box-shadow: inset 4px 4px 4px #d5d7da,
+    inset -4px -4px 4px #ffffff;
+  -webkit-transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  cursor: pointer;
 }
 
 .skill-name-container {
@@ -186,6 +210,7 @@ h2:after {
 
 .project-card {
   margin: 20px;
+  height: 200px;
 }
 
 .project-image-container {
@@ -194,12 +219,13 @@ h2:after {
 
 .project-image {
   width: 20%;
-  min-width: 200px;
+  min-width: 250px;
   height: auto;
 }
 
 .project-details {
   margin: auto;
+  margin-left: 20px;
 }
 
 .project-description {

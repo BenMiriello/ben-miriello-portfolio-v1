@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 
-const Skill = ({name, size}) => {
+const Skill = ({name, size, onClick}) => {
 
   const [clicked, setClicked] = useState(false)
 
   const handleClick = () => {
     setClicked(!clicked);
+    onClick(name)
   }
   
   return (
