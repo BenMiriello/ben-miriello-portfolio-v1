@@ -45,6 +45,13 @@ code {
   max-width: 850px;
 }
 
+@media only screen and (max-width: 480px) {
+	.main-section { 
+		width: 100%;
+        margin: 0;
+	}
+}
+
 h1,
 h2 {
   font-weight: 400;
@@ -150,10 +157,28 @@ h2:after {
   margin: 20px;
 }
 
-.project-card-image {
+.project-grid-image-container{
+  display: block;
+}
+
+@media only screen and (max-width: 480px) {
+  .project-grid-image-container{
+    display: none;
+  }
+}
+
+.project-image-container {
+  margin: auto;
+}
+
+.project-image {
   width: 20%;
   min-width: 200px;
   height: auto;
+}
+
+.project-details {
+  margin: auto;
 }
 
 .project-description {
