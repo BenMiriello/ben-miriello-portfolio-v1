@@ -1,19 +1,21 @@
 import React from "react";
 import { projects } from "../content";
 
-const Project = ({ proj }) => {
+const ProjectCard = ({ proj }) => {
 
   return (
-    <div>
-      <div>
+    <div style={{marginBottom: '20px'}}>
+      <div style={{display: 'block', float: 'left'}}>
         <img 
           style={{
-            width: "200px",
+            width: "20%",
+            minWidth: '200px',
             height: 'auto',
           }}
-          src={ require(`../images/${proj.image}.png`) } />
+          src={ require(`../images/${proj.image}.png`) } 
+        />
       </div>
-      <div>
+      <div style={{display: 'block', float: 'left', width: '60%', height: 'auto'}}>
         <h3>{proj.name}</h3>
       </div>
     </div>
@@ -27,6 +29,7 @@ const Projects = (props) => {
         margin: "auto",
         width: "85%",
         maxWidth: "850px",
+        margin: '0 auto',
       }}
     >
       <h1
@@ -38,7 +41,7 @@ const Projects = (props) => {
         Projects
       </h1>
       {projects.map((proj) => (
-        <Project proj={proj} />
+        <ProjectCard proj={proj} />
       ))}
     </div>
   );

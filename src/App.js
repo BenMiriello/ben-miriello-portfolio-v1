@@ -5,13 +5,13 @@ import AboutMe from './sections/AboutMe'
 import Skills from './sections/Skills'
 import Projects from './sections/Projects'
 
-import "./stylesheets/development.css"
+// import "./stylesheets/development.css"
 
 function App() {
   return (
     <>
       <div style={{height: '40px', width: '100%'}}></div>
-      {/* <Headline /> */}
+      <Headline />
       <div style={{height: '20px', width: '100%'}}></div>
       <AboutMe />
       <div style={{height: '20px', width: '100%'}}></div>
