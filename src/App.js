@@ -1,20 +1,27 @@
 import React from 'react';
-import Headline from './sections/Headline'
-import AboutMe from './sections/AboutMe'
-import Skills from './sections/Skills'
-import Projects from './sections/Projects'
+import Headline from './components/Headline'
+import Section from './components/Section'
+import Skill from './components/Skill'
+import ProjectCard from './components/ProjectCard'
+import content from "./content";
 
 function App() {
   return (
     <>
-      <div style={{height: '40px', width: '100%'}}></div>
       <Headline />
-      <div style={{height: '20px', width: '100%'}}></div>
-      <AboutMe />
-      <div style={{height: '20px', width: '100%'}}></div>
-      <Skills />
-      <div style={{height: '20px', width: '100%'}}></div>
-      <Projects />
+      <Section title="About Me">
+        <p>{content.aboutMe}</p>
+      </Section>
+      <Section title="Skills">
+        {content.skillset.map(name => (
+          <Skill key={name} name={name} />
+        ))}
+      </Section>
+      <Section title="Projects">
+        {content.projects.map((proj) => (
+          <ProjectCard proj={proj} />
+        ))}
+      </Section>
     </>
   );
 }

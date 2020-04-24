@@ -1,6 +1,6 @@
 import React from "react";
 
-import { tagline } from "../content";
+import content from "../content";
 
 const Headline = (props) => {
   return (
@@ -12,7 +12,7 @@ const Headline = (props) => {
       />
       <div className="headline-text">
         <h1>Ben Miriello</h1>
-        <p>{tagline}</p>
+        <p>{content.tagline}</p>
       </div>
     </div>
   );
