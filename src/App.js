@@ -1,11 +1,8 @@
 import React from 'react';
-import './stylesheets/App.css';
 import Headline from './sections/Headline'
 import AboutMe from './sections/AboutMe'
 import Skills from './sections/Skills'
 import Projects from './sections/Projects'
-
-// import "./stylesheets/development.css"
 
 function App() {
   return (

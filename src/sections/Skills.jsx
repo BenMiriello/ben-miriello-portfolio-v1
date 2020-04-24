@@ -1,25 +1,14 @@
 import React from "react";
-import Skill from "./Skill";
+import Skill from "../components/Skill";
 import { skillset } from "../content";
 
 const Skills = (props) => {
   return (
-    <div
-      style={{
-        margin: "auto",
-        width: "85%",
-        maxWidth: "850px",
-      }}
-    >
-      <h1
-        style={{
-          margin: "auto",
-          textAlign: "center",
-        }}
-      >
+    <div className="main-section">
+      <h2>
         Skills
-      </h1>
-      <div style={{ margin: "auto" }}>
+      </h2>
+      <div className="narrow">
         <ul>
           {skillset.map((name) => (
             <Skill key={name} name={name} />
