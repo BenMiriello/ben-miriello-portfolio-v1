@@ -1,1 +1,0 @@
-export default "This is the part that's about me. What does someone need to know 'about me' if it's got to fit in one paragraph? All that goes right here. Everything else to the back of the line. Gotta wait for later."

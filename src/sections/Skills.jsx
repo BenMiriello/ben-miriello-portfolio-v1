@@ -1,8 +1,8 @@
 import React from "react";
-import Skill from './Skill'
+import Skill from "./Skill";
+import { skillset } from "../content";
 
-const Skills = props => {
-
+const Skills = (props) => {
   return (
     <div
       style={{
@@ -19,9 +19,11 @@ const Skills = props => {
       >
         Skills
       </h1>
-      <div style={{margin: 'auto'}}>
+      <div style={{ margin: "auto" }}>
         <ul>
-          {props.skillset.map(name => <Skill key={name} name={name}/>)}
+          {skillset.map((name) => (
+            <Skill key={name} name={name} />
+          ))}
         </ul>
       </div>
     </div>

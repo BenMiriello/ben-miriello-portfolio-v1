@@ -1,5 +1,5 @@
 import React from "react";
-// import "../stylesheets/development.css";
+import { aboutMe } from "../content";
 
 const AboutMe = (props) => {
   return (
@@ -30,7 +30,7 @@ const AboutMe = (props) => {
             textAlign: "left",
           }}
         >
-          {props.about}
+          {aboutMe}
         </p>
       </div>
     </div>
