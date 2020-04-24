@@ -7,7 +7,7 @@ import './styles/index.css';
 import "./vendors/css/normalize.css"
 import "./vendors/css/grid.css"
 import "./vendors/css/animate.css"
-// import "./styles/development.css"
+import "./styles/development.css"
 
 
 ReactDOM.render(

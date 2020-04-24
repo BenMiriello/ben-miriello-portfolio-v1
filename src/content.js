@@ -5,7 +5,7 @@ const content = {
     "Javascript",
     "React",
     "Redux",
-    "React Native",
+    // "React Native",
     "Ruby on Rails",
     "HTML5",
     "CSS3",

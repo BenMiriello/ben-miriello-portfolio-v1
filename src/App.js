@@ -9,10 +9,10 @@ function App() {
   return (
     <>
       <Headline />
-      <Section title="About Me">
+      <Section title="About Me" narrow>
         <p>{content.aboutMe}</p>
       </Section>
-      <Section title="Skills">
+      <Section title="Skills" narrow>
         {content.skillset.map(name => (
           <Skill key={name} name={name} />
         ))}

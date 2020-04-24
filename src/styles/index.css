@@ -73,6 +73,7 @@ h2:after {
   width: 100px;
   margin: 0 auto;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .narrow {
@@ -146,11 +147,15 @@ h2:after {
 }
 
 .project-card {
-
+  margin: 20px;
 }
 
 .project-card-image {
   width: 20%;
   min-width: 200px;
   height: auto;
+}
+
+.project-description {
+  font-size: 90%;
 }
