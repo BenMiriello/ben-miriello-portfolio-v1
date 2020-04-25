@@ -65,6 +65,7 @@ code {
   .main-section {
     width: 95%;
     margin: auto;
+    margin-top: 10px;
   }
 }
 
@@ -100,6 +101,14 @@ h2:after {
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  h1:after,
+  h2:after {
+    margin-top: 5px;
+    margin-top: 5px;
+  }
 }
 
 h3 {
@@ -169,6 +178,19 @@ p {
   border-color: #f3f5f7;
   border-width: 3px;
   box-shadow: 8px 8px 8px #d5d7da, -8px -8px 8px #ffffff;
+  margin: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .headline {
+    width: 80vw;
+    min-width: 100px;
+    margin-top: 20px;
+  }
+  
+  .headshot {
+    width: 100%;
+  }
 }
 
 .headline-text {
@@ -180,7 +202,7 @@ p {
 @media only screen and (max-width: 540px) {
   .headline {
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     height: auto;
   }
 
@@ -189,6 +211,13 @@ p {
     margin: auto;
     margin-bottom: 20px;
   }
+
+@media only screen and (max-width: 480px) {
+  .headshot {
+    width: 45vw;
+    min-width: 0px;
+  }
+}
 
   .headline-text {
     margin-top: 40px, auto;
@@ -206,9 +235,17 @@ p {
   margin-bottom: 40px;
 }
 
+@media only screen and (max-width: 480px) {
+  .skills {
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+}
+
 .skill {
   display: inline-block;
-  margin: 10px;
+  margin: 8px;
   border-radius: 20px;
   border-style: solid;
   border-color: #f3f5f7;
@@ -217,11 +254,12 @@ p {
   -webkit-transition: box-shadow 0.3s, background-color 0.1s, border-color 0.1s;
   transition: box-shadow 0.3s, background-color 0.1s, border-color 0.1s;
   cursor: default;
+  font-weight: 400;
 }
 
 .skill-clicked {
   display: inline-block;
-  margin: 10px;
+  margin: 8px;
   border-radius: 20px;
   border-style: solid;
   border-color: #f3f5f7;
@@ -277,6 +315,13 @@ p {
   overflow: auto;
   display: grid;
   grid-template-columns: auto auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .project-card {
+    /* width: 95%; */
+    margin: 16px 8px;
+  }
 }
 
 .project-image-container {
