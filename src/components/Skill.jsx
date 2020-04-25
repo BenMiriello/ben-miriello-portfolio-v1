@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import TechIcon from './TechIcon';
 
-const Skill = ({name, size, onClick}) => {
+const Skill = ({name, onClick}) => {
 
   const [clicked, setClicked] = useState(false)
 
@@ -15,7 +16,7 @@ const Skill = ({name, size, onClick}) => {
       onClick={() => handleClick()}
     >
       <div className="skill-name-container">
-        <span>{name}</span>
+        <span><TechIcon iconName={name} className={'skill-icon'}/>{name}</span>
       </div>
     </li>
   );

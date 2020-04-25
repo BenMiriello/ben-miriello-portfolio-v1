@@ -63,7 +63,7 @@ code {
 
 @media only screen and (max-width: 480px) {
   .main-section {
-    width: 95%;
+    width: 100%;
     margin: auto;
     margin-top: 10px;
   }
@@ -294,6 +294,11 @@ p {
   margin-bottom: 5px;
 }
 
+.skill-icon {
+  width: 17px;
+  margin-right: 8px;
+}
+
 /* ------------------------------------------------------------ */
 /* PROJECTS */
 /* ------------------------------------------------------------ */
@@ -317,12 +322,12 @@ p {
   grid-template-columns: auto auto;
 }
 
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
   .project-card {
-    /* width: 95%; */
-    margin: 16px 8px;
+    width: 100%;
+    margin: 16px 8px 0px ;
   }
-}
+} */
 
 .project-image-container {
   width: 275px;

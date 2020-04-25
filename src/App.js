@@ -20,7 +20,7 @@ function App() {
       setSelectedSkills(temp);
     }
   };
-
+  
   return (
     <>
       <Headline />
@@ -32,9 +32,9 @@ function App() {
           <Skill key={name} name={name} onClick={handleClickSkill} />
         ))}
       </Section>
-      <Section title="Projects">
+      <Section title="Projects" narrow>
         {content.projects.map((proj) => (
-          <ProjectCard proj={proj} />
+          <ProjectCard project={proj} />
         ))}
       </Section>
     </>
