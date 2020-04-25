@@ -23,10 +23,12 @@ const ProjectCard = ({ proj }) => {
   return (
     <div className="project-card">
       <div className="project-image-container hide-before-mobile">
-        <img
-          className="project-image"
-          src={process.env.PUBLIC_URL + `../images/${proj.image}.jpg`}
-        />
+        <div className="project-image-container">
+          <img
+            className="project-image"
+            src={process.env.PUBLIC_URL + `../images/${proj.image}.jpg`}
+          />
+        </div>
       </div>
       <div className="project-details">
         <h3>{proj.name}</h3>

@@ -279,10 +279,19 @@ p {
   grid-template-columns: auto auto;
 }
 
+.project-image-container {
+  width: 275px;
+  height: 200px;
+  overflow: auto;
+}
+
 .project-image {
-  margin: auto;
-  display: block;
-  width: 250px;
+  display: block; 
+  height: 70%; 
+  margin: 11% 0 0 20px;
+  object-fit: contain;
+  width: auto;
+  overflow: hidden;
   border-radius: 5px;
   border-style: solid;
   border-color: #f3f5f7;
