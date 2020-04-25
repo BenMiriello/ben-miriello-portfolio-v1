@@ -12,7 +12,7 @@ const App = () => {
     if (selectedSkills.includes(clicked)) {
       const idx = selectedSkills.indexOf(clicked);
       if (idx >= 0) {
-        let temp = selectedSkills;
+        let temp = [...selectedSkills];
         temp.splice(idx, 1);
         setSelectedSkills(temp);
       }
