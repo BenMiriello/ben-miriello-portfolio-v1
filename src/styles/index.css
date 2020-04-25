@@ -144,6 +144,7 @@ p {
   height: 250px;
   display: flex;
   max-width: 850px;
+  margin-bottom: 40px;
 }
 
 .headshot {
@@ -211,16 +212,24 @@ p {
 .project-card {
   margin: 20px;
   height: 200px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px #d5d7da,
+    -4px -4px 4px #ffffff;
+  -webkit-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
 }
 
 .project-image-container {
   margin: auto;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .project-image {
   width: 20%;
   min-width: 250px;
   height: auto;
+  border-radius: 5px;
 }
 
 .project-details {
@@ -230,4 +239,32 @@ p {
 
 .project-description {
   font-size: 90%;
+  margin-bottom: 15px;
+}
+
+.project-icon-button {
+  float: left;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-bottom: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 18px;
+  box-shadow: inset 4px 4px 4px #d5d7da,
+    inset -4px -4px 4px #ffffff;
+  -webkit-transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+}
+
+
+.project-icon-container {
+  width: 50%;
+  /* margin: auto; */
+  margin-top: 9px;
+  /* margin-right: px; */
+  margin-left: 10px;
+}
+
+.project-tech-icon {
+
 }

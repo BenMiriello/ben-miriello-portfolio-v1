@@ -1,27 +1,26 @@
-import React, { useState } from 'react';
-import Headline from './components/Headline'
-import Section from './components/Section'
-import Skill from './components/Skill'
-import ProjectCard from './components/ProjectCard'
+import React, { useState } from "react";
+import Headline from "./components/Headline";
+import Section from "./components/Section";
+import Skill from "./components/Skill";
+import ProjectCard from "./components/ProjectCard";
 import content from "./content";
 
 function App() {
-
   const [selectedSkills, setSelectedSkills] = useState([]);
-  
-  const handleClickSkill = clicked => {
+
+  const handleClickSkill = (clicked) => {
     if (selectedSkills.includes(clicked)) {
-      const idx = selectedSkills.indexOf(skill => skill === clicked)
-      let temp = selectedSkills
-      temp.splice(idx, 1)
+      const idx = selectedSkills.indexOf((skill) => skill === clicked);
+      let temp = selectedSkills;
+      temp.splice(idx, 1);
       setSelectedSkills(temp);
     } else {
-      const temp = selectedSkills
-      temp.push(clicked)
-      setSelectedSkills(temp)
+      const temp = selectedSkills;
+      temp.push(clicked);
+      setSelectedSkills(temp);
     }
-  }
-  
+  };
+
   return (
     <>
       <Headline />
@@ -29,7 +28,7 @@ function App() {
         <p>{content.aboutMe}</p>
       </Section>
       <Section title="Skills" skills>
-        {content.skillset.map(name => (
+        {content.skillset.map((name) => (
           <Skill key={name} name={name} onClick={handleClickSkill} />
         ))}
       </Section>
@@ -43,4 +42,3 @@ function App() {
 }
 
 export default App;
-
