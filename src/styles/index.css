@@ -3,6 +3,11 @@
 
 /*
 SALMON: #FFA07A -light: #ffbca1 -dark: 	#E9967A
+
+Salmon + tetradic complementary colors:
+#e08b79   salmon
+#7998e0   blue
+#89e079   green
 */
 
 /* ------------------------------------------------------------ */
@@ -24,8 +29,8 @@ SALMON: #FFA07A -light: #ffbca1 -dark: 	#E9967A
 
 html,
 body {
-  font-family: "Europa", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: "Europa", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -41,10 +46,9 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
 
 /* ------------------------------------------------------------ */
 /* REUSABLE COMPONENTS */
@@ -58,10 +62,10 @@ code {
 }
 
 @media only screen and (max-width: 480px) {
-	.main-section { 
-		width: 100%;
-        margin: 0;
-	}
+  .main-section {
+    width: 95%;
+    margin: auto;
+  }
 }
 
 h1,
@@ -86,12 +90,13 @@ h2 {
   letter-spacing: 1px;
 }
 
+h1:after,
 h2:after {
   display: block;
   height: 2px;
-  background-color:	#e08b79;
+  background-color: #7998e0;
   content: "";
-  width: 150px;
+  width: 125px;
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -110,16 +115,25 @@ p {
   width: 85%;
 }
 
-.hide-in-mobile{
+.hide-in-mobile {
   display: block;
 }
 
 @media only screen and (max-width: 480px) {
-  .hide-in-mobile{
+  .hide-in-mobile {
     display: none;
   }
 }
 
+.hide-before-mobile {
+  display: block;
+}
+
+@media only screen and (max-width: 606px) {
+  .hide-before-mobile {
+    display: none;
+  }
+}
 
 /* ------------------------------------------------------------ */
 /* HEADLINE */
@@ -132,8 +146,6 @@ p {
   width: 1000px;
 }
 
-
-
 /* ------------------------------------------------------------ */
 /* HEADLINE */
 /* ------------------------------------------------------------ */
@@ -142,8 +154,10 @@ p {
   width: 85%;
   margin: auto;
   height: 250px;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   max-width: 850px;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 
@@ -151,12 +165,34 @@ p {
   width: 250px;
   min-width: 250px;
   border-radius: 125px;
+  border-style: solid;
+  border-color: #f3f5f7;
+  border-width: 3px;
+  box-shadow: 8px 8px 8px #d5d7da, -8px -8px 8px #ffffff;
 }
 
 .headline-text {
   min-width: 250px;
   margin: auto;
   text-align: center;
+}
+
+@media only screen and (max-width: 540px) {
+  .headline {
+    display: block;
+    margin-bottom: 40px;
+    height: auto;
+  }
+
+  .headshot {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .headline-text {
+    margin-top: 40px, auto;
+  }
 }
 
 
@@ -177,8 +213,7 @@ p {
   border-style: solid;
   border-color: #f3f5f7;
   border-width: 1px;
-  box-shadow: 5px 5px 5px #d5d7da,
-    -5px -5px 5px #ffffff;
+  box-shadow: 5px 5px 5px #d5d7da, -5px -5px 5px #ffffff;
   -webkit-transition: box-shadow 0.3s, background-color 0.1s, border-color 0.1s;
   transition: box-shadow 0.3s, background-color 0.1s, border-color 0.1s;
   cursor: default;
@@ -191,10 +226,8 @@ p {
   border-style: solid;
   border-color: #f3f5f7;
   border-width: 1px;
-  box-shadow: inset 5px 5px 5px #d5d7da,
-    inset -5px -5px 5px #ffffff,
-    2px 2px 2px #d5d7da,
-    -2px -2px 2px #ffffff;
+  box-shadow: inset 5px 5px 5px #d5d7da, inset -5px -5px 5px #ffffff,
+    2px 2px 2px #d5d7da, -2px -2px 2px #ffffff;
   -webkit-transition: box-shadow 0.3s, background-color 0.1s, border-color 0.1s;
   transition: box-shadow 0.3s, background-color 0.1s, border-color 0.1s;
   cursor: default;
@@ -206,17 +239,14 @@ p {
 }
 
 .skill:hover {
-  box-shadow: 5px 5px 5px #d1d3d4,
-    -5px -5px 5px #ffffff;
+  box-shadow: 5px 5px 5px #d1d3d4, -5px -5px 5px #ffffff;
   border-color: rgb(250, 250, 250);
   background: rgb(255, 255, 255);
 }
 
 .skill-clicked:hover {
-  box-shadow: inset 5px 5px 5px #e1e3e6,
-    inset -5px -5px 5px #ffffff,
-    2px 2px 2px #d5d7da,
-    -2px -2px 2px #ffffff;
+  box-shadow: inset 5px 5px 5px #e1e3e6, inset -5px -5px 5px #ffffff,
+    2px 2px 2px #d5d7da, -2px -2px 2px #ffffff;
   background: rgb(255, 255, 255);
 }
 
@@ -225,7 +255,6 @@ p {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-
 
 /* ------------------------------------------------------------ */
 /* PROJECTS */
@@ -242,33 +271,23 @@ p {
   margin: 30px 0px;
   min-height: 200px;
   border-radius: 10px;
-  box-shadow: 4px 4px 4px #d5d7da,
-    -4px -4px 4px #ffffff;
+  box-shadow: 4px 4px 4px #d5d7da, -4px -4px 4px #ffffff;
   -webkit-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
   overflow: auto;
-}
-
-.project-card:after {
-  clear: both;
-}
-
-.project-image-container {
-  margin: auto;
-  margin-top: 22px;
-  margin-left: 30px;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 .project-image {
-  width: 20%;
-  min-width: 250px;
-  height: auto;
+  margin: auto;
+  display: block;
+  width: 250px;
   border-radius: 5px;
   border-style: solid;
   border-color: #f3f5f7;
   border-width: 2px;
-  box-shadow: 4px 4px 4px #d5d7da,
-    -4px -4px 4px #ffffff;
+  box-shadow: 4px 4px 4px #d5d7da, -4px -4px 4px #ffffff;
   -webkit-transition: box-shadow 0.2s;
   transition: box-shadow 0.2s;
   cursor: pointer;
@@ -293,19 +312,15 @@ p {
   margin-bottom: 12px;
   width: 40px;
   height: 40px;
-  border-radius: 20px;
+  border-radius: 12px;
   border-style: solid;
   border-color: #f3f5f7;
   border-width: 1px;
-  box-shadow: 
-    inset 4px 4px 4px #d5d7da,
-    inset -4px -4px 4px #ffffff,
-    2px 2px 2px #d5d7da,
-    -2px -2px 2px #ffffff;
+  box-shadow: inset 4px 4px 4px #d5d7da, inset -4px -4px 4px #ffffff,
+    2px 2px 2px #d5d7da, -2px -2px 2px #ffffff;
   -webkit-transition: box-shadow 0.5s;
   transition: box-shadow 0.5s;
 }
-
 
 .project-icon-container {
   width: 50%;
@@ -316,5 +331,4 @@ p {
 }
 
 .project-tech-icon {
-
 }

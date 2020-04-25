@@ -7,7 +7,7 @@ const Headline = (props) => {
     <div className="main-section headline">
       <img
         className="headshot"
-        src={process.env.PUBLIC_URL + "./images/headshot.png"}
+        src={process.env.PUBLIC_URL + "./images/portrait.jpeg"}
         alt="Headshot"
       />
       <div className="headline-text">
