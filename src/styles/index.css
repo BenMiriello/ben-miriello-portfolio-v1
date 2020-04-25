@@ -375,8 +375,10 @@ p {
   border-style: solid;
   border-color: #f3f5f7;
   border-width: 1px;
-  box-shadow: inset 4px 4px 4px #d5d7da, inset -4px -4px 4px #ffffff,
-    2px 2px 2px #d5d7da, -2px -2px 2px #ffffff;
+  box-shadow: inset 4px 4px 4px #d5d7da, 
+    inset -4px -4px 4px #ffffff,
+    2px 2px 2px #d5d7da, 
+    -2px -2px 2px #ffffff;
   -webkit-transition: box-shadow 0.5s;
   transition: box-shadow 0.5s;
 }
@@ -389,5 +391,10 @@ p {
   margin-left: 10px;
 }
 
-.project-tech-icon {
+.selected-project-tech {
+  box-shadow: inset 5px 5px 5px #ffffff, 
+  inset -5px -5px 5px #d5d7da,
+  3px 3px 3px #d5d7da, 
+  -3px -3px 3px #ffffff;
+  border-width: 0px;
 }

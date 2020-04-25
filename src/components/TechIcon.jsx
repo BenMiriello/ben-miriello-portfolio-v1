@@ -8,7 +8,7 @@ import { ReactComponent as PGIcon } from "../vendors/devicons/postgresql/postgre
 import { ReactComponent as CSS3Icon } from "../vendors/devicons/css3/css3-original.svg";
 import { ReactComponent as HTML5Icon } from "../vendors/devicons/html5/html5-original.svg";
 
-const TechIcon = ({ iconName, className }) => {
+const TechIcon = ({ iconName, className, selected, inProject }) => {
   let Icon = null;
 
   switch(iconName){
@@ -22,18 +22,23 @@ const TechIcon = ({ iconName, className }) => {
     case 'HTML5': Icon = HTML5Icon; break;
   }
 
-  console.log('hi', iconName)
-
   if (!Icon) return null
 
   if (className === 'skill-icon') {
     return <Icon className="skill-icon" />
   }
 
+  let buttonClass = "project-icon-button"
+  let iconClass = "project-tech-icon"
+
+  if (selected && inProject) {
+    buttonClass ="project-icon-button selected-project-tech"
+  }
+
   return (
-    <div className="project-icon-button">
+    <div className={buttonClass}>
       <div className="project-icon-container">
-        <Icon className={"project-tech-icon" + className} />
+        <Icon className={iconClass} />
       </div>
     </div>
   )

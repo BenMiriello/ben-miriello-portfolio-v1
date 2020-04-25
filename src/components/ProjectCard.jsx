@@ -1,10 +1,13 @@
 import React from "react";
 import TechIcon from './TechIcon'
 
-const ProjectCard = ({ project }) => {
-
+const ProjectCard = ({ selectedSkills, project }) => {
+  
   const technologies = () => {
-    project.technologies.map(name => {
+    return project.technologies.map(name => {
+      if (selectedSkills.includes(name)) {
+        return <TechIcon iconName={name} selected inProject />
+      }
       return <TechIcon iconName={name} />
     })
   }
@@ -23,9 +26,7 @@ const ProjectCard = ({ project }) => {
         <h3>{project.name}</h3>
         <p className="project-description">{project.description}</p>
         <div>
-          {project.technologies.map(name => 
-            <TechIcon iconName={name} />
-          )}
+          {technologies()}
         </div>
       </div>
     </div>
