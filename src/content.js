@@ -24,7 +24,7 @@ export default {
         "React",
         "Redux",
         "Rails",
-        "Javascript",
+        // "Javascript",
         "Ruby",
         "PostgreSQL",
         "CSS3",
@@ -38,6 +38,7 @@ export default {
         // 'Spawnling',
         // 'Amadeus API',
       ],
+      priority: 0,
     },
     {
       name: "Planet Express",
@@ -53,6 +54,7 @@ export default {
         "HTML5",
         // 'Active Model'
       ],
+      priority: 1,
     },
     {
       name: "Shower Thoughts",
@@ -67,6 +69,7 @@ export default {
         // 'ActiveRecord',
         // 'SQLite3'
       ],
+      priority: 2,
     },
   ],
 };

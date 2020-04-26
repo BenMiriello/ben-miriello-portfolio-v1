@@ -21,6 +21,32 @@ const App = () => {
     }
   };
 
+  const projects = () => {
+    const projects = [...content.projects];
+
+    // add matches values to projects
+    projects.forEach((project) => {
+      project.matches = 0;
+      selectedSkills.forEach((skill) => {
+        if (project.technologies.includes(skill)) {
+          project.matches++;
+        }
+      });
+    });
+
+    // sort by number of matches
+    projects.sort((a, b) => b.matches - a.matches);
+
+    // sort by priority
+    projects.sort((a, b) => {
+      if (a.matches === b.matches) {
+        return a.priority - b.priority;
+      }
+    });
+
+    return projects;
+  };
+
   return (
     <>
       <Headline />
@@ -37,8 +63,8 @@ const App = () => {
           />
         ))}
       </Section>
-      <Section title="Projects" narrow>
-        {content.projects.map((proj) => (
+      <Section title="Projects">
+        {projects().map((proj) => (
           <ProjectCard project={proj} selectedSkills={selectedSkills} />
         ))}
       </Section>
