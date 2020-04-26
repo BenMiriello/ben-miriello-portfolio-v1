@@ -9,6 +9,7 @@ export default {
     "Ruby",
     "Rails",
     "PostgreSQL",
+    "SQLite3",
     "CSS3",
     "HTML5",
     // "React Native",
@@ -64,10 +65,10 @@ export default {
       technologies: [
         "Rails",
         "Ruby",
+        'SQLite3',
         "CSS3",
         "HTML5",
         // 'ActiveRecord',
-        // 'SQLite3'
       ],
       priority: 2,
     },

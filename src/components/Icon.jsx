@@ -7,6 +7,7 @@ import { ReactComponent as RailsColor } from "../icons/rails.svg";
 import { ReactComponent as PGColor } from "../icons/postgresql.svg";
 import { ReactComponent as CSS3Color } from "../icons/css3.svg";
 import { ReactComponent as HTML5Color } from "../icons/html5.svg";
+import { ReactComponent as SQLite3Color } from "../icons/sqlite3.svg";
 
 import { ReactComponent as JSBW } from "../icons/javascript-bw.svg";
 import { ReactComponent as ReactBW } from "../icons/react-bw.svg";
@@ -16,6 +17,7 @@ import { ReactComponent as RailsBW } from "../icons/rails-bw.svg";
 import { ReactComponent as PGBW } from "../icons/postgresql-bw.svg";
 import { ReactComponent as CSS3BW } from "../icons/css3-bw.svg";
 import { ReactComponent as HTML5BW } from "../icons/html5-bw.svg";
+import { ReactComponent as SQLite3BW } from "../icons/sqlite3-bw.svg";
 
 const Icon = ({ iconName, className, selected, inProject }) => {
   let Icon = null;
@@ -30,6 +32,7 @@ const Icon = ({ iconName, className, selected, inProject }) => {
       case 'PostgreSQL': Icon = PGColor; break;
       case 'CSS3': Icon = CSS3Color; break;
       case 'HTML5': Icon = HTML5Color; break;
+      case 'SQLite3': Icon = SQLite3Color; break;
     }
   } else {
     switch(iconName){
@@ -41,6 +44,7 @@ const Icon = ({ iconName, className, selected, inProject }) => {
       case 'PostgreSQL': Icon = PGBW; break;
       case 'CSS3': Icon = CSS3BW; break;
       case 'HTML5': Icon = HTML5BW; break;
+      case 'SQLite3': Icon = SQLite3BW; break;
     }
   }
 
