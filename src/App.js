@@ -20,7 +20,7 @@ const App = () => {
       setSelectedSkills([...selectedSkills, clicked]);
     }
   };
-  
+
   return (
     <>
       <Headline />
@@ -29,7 +29,12 @@ const App = () => {
       </Section>
       <Section title="Skills" skills>
         {content.skillset.map((name) => (
-          <Skill key={name} name={name} onClick={handleClickSkill} />
+          <Skill
+            key={name}
+            name={name}
+            onClick={handleClickSkill}
+            selectedSkills={selectedSkills}
+          />
         ))}
       </Section>
       <Section title="Projects" narrow>
@@ -39,6 +44,6 @@ const App = () => {
       </Section>
     </>
   );
-}
+};
 
 export default App;

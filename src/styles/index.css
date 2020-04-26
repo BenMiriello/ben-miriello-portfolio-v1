@@ -37,7 +37,7 @@ body {
   background: #f3f5f7;
   /* background: rgb(129,185,210); */
   /* background: linear-gradient(0deg, rgba(129,185,210,1) 0%, rgba(153,205,229,1) 18%, rgba(186,212,224,1) 51%, rgba(186,212,224,1) 78%, rgba(230,179,222,1) 100%); */
-  color: #444;
+  color: #333;
   font-weight: 300;
   font-style: normal;
   font-size: 20px;
@@ -289,9 +289,9 @@ p {
 }
 
 .skill-name-container {
-  margin: 18px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 12px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 .skill-icon {
@@ -385,9 +385,7 @@ p {
 
 .project-icon-container {
   width: 50%;
-  /* margin: auto; */
   margin-top: 9px;
-  /* margin-right: px; */
   margin-left: 10px;
 }
 

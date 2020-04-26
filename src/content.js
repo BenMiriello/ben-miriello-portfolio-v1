@@ -21,11 +21,11 @@ export default {
       description:
         "Search for flights and view the cheapest offers and the latest price. Built with React and Rails.",
       technologies: [
-        "Javascript",
         "React",
         "Redux",
-        "Ruby",
         "Rails",
+        "Javascript",
+        "Ruby",
         "PostgreSQL",
         "CSS3",
         "HTML5",
@@ -46,8 +46,8 @@ export default {
         "Web App providing tickets to the solar system with realistic orbital transfer windows and travel times.",
       technologies: [
         "Javascript",
-        "Ruby",
         "Rails",
+        "Ruby",
         "PostgreSQL",
         "CSS3",
         "HTML5",
@@ -60,8 +60,8 @@ export default {
       description:
         "A twitter-like social media site based on the subreddit of the same name. Built fully in Rails.",
       technologies: [
-        "Ruby",
         "Rails",
+        "Ruby",
         "CSS3",
         "HTML5",
         // 'ActiveRecord',
