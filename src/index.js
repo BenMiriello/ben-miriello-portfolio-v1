@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import "./vendors/css/normalize.css"
-import "./vendors/css/grid.css"
-import "./vendors/css/animate.css"
+// import "./vendors/css/normalize.css"
+// import "./vendors/css/grid.css"
+// import "./vendors/css/animate.css"
 import './styles/index.css';
 // import "./styles/development.css"
 

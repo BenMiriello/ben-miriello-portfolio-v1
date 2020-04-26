@@ -68,6 +68,7 @@ const App = () => {
           <Project
             key={project.name}
             project={project}
+            onClick={handleClickSkill}
             selectedSkills={selectedSkills}
           />
         ))}

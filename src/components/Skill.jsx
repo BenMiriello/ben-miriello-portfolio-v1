@@ -24,7 +24,6 @@ const Skill = ({ name, onClick, selectedSkills }) => {
     >
       <div className="skill-name-container">
         <span>
-          {/* <Icon iconName={name} className={"skill-icon"} /> */}
           {showIcon()}
           {name}
         </span>

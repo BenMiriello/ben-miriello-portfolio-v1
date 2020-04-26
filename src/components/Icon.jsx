@@ -19,7 +19,8 @@ import { ReactComponent as CSS3BW } from "../icons/css3-bw.svg";
 import { ReactComponent as HTML5BW } from "../icons/html5-bw.svg";
 import { ReactComponent as SQLite3BW } from "../icons/sqlite3-bw.svg";
 
-const Icon = ({ iconName, className, selected, inProject }) => {
+const Icon = (props) => {
+  const { iconName, className, selected, inProject, handleClickSkill } = props;
   let Icon = null;
 
   if (!!selected) {
@@ -48,20 +49,20 @@ const Icon = ({ iconName, className, selected, inProject }) => {
     }
   }
 
+  let buttonClass = "project-icon-button"
+  
+  if (selected && inProject) {
+    buttonClass ="project-icon-button selected-project-tech"
+  }
+
   if (!Icon) return null
 
   if (className === 'skill-icon') {
     return <Icon className="skill-icon" />
   }
 
-  let buttonClass = "project-icon-button"
-
-  if (selected && inProject) {
-    buttonClass ="project-icon-button selected-project-tech"
-  }
-
   return (
-    <div className={buttonClass}>
+    <div className={buttonClass} onClick={handleClickSkill}>
       <div className="project-icon-container">
         <Icon />
       </div>

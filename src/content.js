@@ -25,7 +25,7 @@ export default {
         "React",
         "Redux",
         "Rails",
-        // "Javascript",
+        "Javascript",
         "Ruby",
         "PostgreSQL",
         "CSS3",
