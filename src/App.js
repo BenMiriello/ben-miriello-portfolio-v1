@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Headline from "./components/Headline";
 import Section from "./components/Section";
 import Skill from "./components/Skill";
-import ProjectCard from "./components/ProjectCard";
+import Project from "./components/Project";
 import content from "./content";
 
 const App = () => {
@@ -64,8 +64,12 @@ const App = () => {
         ))}
       </Section>
       <Section title="Projects">
-        {projects().map((proj) => (
-          <ProjectCard project={proj} selectedSkills={selectedSkills} />
+        {projects().map((project) => (
+          <Project
+            key={project.name}
+            project={project}
+            selectedSkills={selectedSkills}
+          />
         ))}
       </Section>
     </>

@@ -1,14 +1,14 @@
 import React from "react";
-import TechIcon from './TechIcon'
+import Icon from './Icon'
 
-const ProjectCard = ({ selectedSkills, project }) => {
+const Project = ({ selectedSkills, project }) => {
   
   const technologies = () => {
     return project.technologies.map(name => {
       if (selectedSkills.includes(name)) {
-        return <TechIcon iconName={name} selected inProject />
+        return <Icon iconName={name} selected inProject />
       }
-      return <TechIcon iconName={name} />
+      return <Icon iconName={name} />
     })
   }
   
@@ -33,4 +33,4 @@ const ProjectCard = ({ selectedSkills, project }) => {
   );
 };
 
-export default ProjectCard;
+export default Project;

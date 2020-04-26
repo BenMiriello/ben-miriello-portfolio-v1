@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import TechIcon from "./TechIcon";
+import Icon from "./Icon";
 
 const Skill = ({ name, onClick, selectedSkills }) => {
   const [clicked, setClicked] = useState(false);
@@ -11,9 +11,9 @@ const Skill = ({ name, onClick, selectedSkills }) => {
 
   let showIcon = () => {
     if (selectedSkills.includes(name)) {
-      return <TechIcon iconName={name} className={"skill-icon"} selected />;
+      return <Icon iconName={name} className={"skill-icon"} selected />;
     } else {
-      return <TechIcon iconName={name} className={"skill-icon"} />;
+      return <Icon iconName={name} className={"skill-icon"} />;
     }
   }
 
@@ -24,7 +24,7 @@ const Skill = ({ name, onClick, selectedSkills }) => {
     >
       <div className="skill-name-container">
         <span>
-          {/* <TechIcon iconName={name} className={"skill-icon"} /> */}
+          {/* <Icon iconName={name} className={"skill-icon"} /> */}
           {showIcon()}
           {name}
         </span>

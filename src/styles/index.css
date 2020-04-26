@@ -50,6 +50,12 @@ code {
     monospace;
 }
 
+/* react-animate-reorder */
+.reorder-wrapper-item {
+  position: relative;
+  transition: top 1s ease-in;
+}
+
 /* ------------------------------------------------------------ */
 /* REUSABLE COMPONENTS */
 /* ------------------------------------------------------------ */
@@ -255,6 +261,7 @@ p {
   transition: box-shadow 0.3s, background-color 0.1s, border-color 0.1s;
   cursor: default;
   font-weight: 400;
+  font-size: 93%;
 }
 
 .skill-clicked {
@@ -322,12 +329,12 @@ p {
   grid-template-columns: auto auto;
 }
 
-/* @media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .project-card {
-    width: 100%;
-    margin: 16px 8px 0px ;
+    width: 94%;
+    margin: 16px 10px 0px ;
   }
-} */
+}
 
 .project-image-container {
   width: 275px;
